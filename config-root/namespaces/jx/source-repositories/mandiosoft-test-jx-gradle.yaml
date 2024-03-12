@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: Mandiosoft
+    provider: github
+    repository: test-jx-gradle
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: mandiosoft-test-jx-gradle
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/Mandiosoft/test-jx-gradle.git
+  org: Mandiosoft
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: test-jx-gradle
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/Mandiosoft/test-jx-gradle

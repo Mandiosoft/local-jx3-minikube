@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         Mandiosoft/local-jx3-minikube: true
+        Mandiosoft/test-jx-gradle: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         Mandiosoft/local-jx3-minikube: merge
+        Mandiosoft/test-jx-gradle: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - Mandiosoft/local-jx3-minikube
+        - Mandiosoft/test-jx-gradle
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - Mandiosoft/local-jx3-minikube
+        - Mandiosoft/test-jx-gradle
       target_url: http://lighthouse-jx.192.168.39.67.nip.io/merge/status
 kind: ConfigMap
 metadata:
